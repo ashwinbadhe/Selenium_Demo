@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG.Enable_Disable_XML"/>
+      <methods>
+		 <exclude name="Test_Case_2"></exclude>     <!-- exclude is use to when method in not executing-->
+		 <include name="Test1.*"></include>          <!-- include is use when method is executeing & .* mens onle same name of any methodes are executing-->
+	  </methods>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
